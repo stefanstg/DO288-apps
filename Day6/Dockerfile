@@ -1,6 +1,6 @@
 FROM node:12.18.1
 
-RUN mkdri Day6
+RUN mkdir Day6
 WORKDIR /Day6
 COPY server.js /Day6/server.js
 
