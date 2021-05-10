@@ -7,10 +7,10 @@ const app = express()
 const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
- host: ,
- user: ,
- password: ,
- database: 
+ host: 192.168.99.101,
+ user: user,
+ password: pass,
+ database: test 
 });
 con.connect(function(err) {
  if (err) throw err;
@@ -22,4 +22,4 @@ con.query('SELECT * from test2', function (err, rows, fields) {
  res.send(rows)
 })
  })
-app.listen(port, () => console.log(`Example app listening on port ${port}`))
+app.listen(port, (3306) => console.log(`Example app listening on port ${port}`))
