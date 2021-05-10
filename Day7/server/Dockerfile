@@ -6,4 +6,4 @@ RUN npm install express
 
 CMD [ "node", "server.js" ]
 
-EXPOSE 3306
+EXPOSE 3000
