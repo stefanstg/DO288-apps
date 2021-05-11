@@ -9,8 +9,8 @@ app.get('/', (req, res) =>{
 var con = mysql.createConnection({
  host: 'testsql.myproject.svc',
  user: process.env.user,
- password: process.env.user,
- database: process.env.user
+ password: process.env.pass,
+ database: process.env.test
 });
 con.connect(function(err) {
  if (err) throw err;
