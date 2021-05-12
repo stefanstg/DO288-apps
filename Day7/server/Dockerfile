@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:12.8.1
 
 COPY /server.js /Day7/server/server.js
 WORKDIR /Day7/server/
